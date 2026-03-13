@@ -1,5 +1,5 @@
-# [raccoon2891.com](https://raccoon2891.com)
-This repository hosts the files for my locally hosted website.
+# FREE Server Website
+This repository hosts the files for my [locally hosted website](https://raccoon2891.com).
 
-- Local Repository: [git](https://git.raccoon2891.com/druiz/raccoon2891-website)
-- Remote Repository: [git](https://github.com/sanicsquirtle420/local-website)
+- Local Repository: [git.raccoon2891.com](https://git.raccoon2891.com/druiz/raccoon2891-website)
+- Remote Repository: [github.com](https://github.com/sanicsquirtle420/local-website)
