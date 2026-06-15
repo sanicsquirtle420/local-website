@@ -1,11 +1,10 @@
-/*
-Theme: Aqua
-Version: 2025.11.16
-Author: https://github.com/sanicsquirtle420
+/* 
+Theme: Yotsuba Nakano
+Version: 2026.06.14
+Author: https://github.com/sanicsquirtle420 
 */
-
 header {
-	background-color: #add8e6 ;
+	background-color: #fab387 ;
 	padding: 25px ;
 }
 header h2 {
@@ -20,7 +19,7 @@ body {
 	display: flex ;
 	flex-direction: column ;
 	font-size: 15px ;
-	background-color: #312c38 ;
+	background-color: #3f533c;
 }
 footer {
 	width: 100% ;
@@ -60,16 +59,30 @@ a:link {
 }
 
 a:visited {
-	color: #b69ddd
+	color: #fab387
 }
 
 a:hover {
-	color: #add8e6 ;
+	color: #a6e3a1;
+}
+
+span.code-line {
+	background-color: #1e1e2e ;
+	border-radius: 5px ;
+	font-family: monospace ;
+	color: #cdd6f4 ;
+	padding: 2px 5px 2px 5px ;
+}
+
+p.italics {
+	font-family: "Open Sans" ;
+	font-style: italic ;
+	color: #a6adc8 ;
 }
 
 /* Image CSS */
 img {
-	color: #0000ff ;
+	color: #74c7ec ;
 	font-family: monospace ;
 	padding-right: 15px ;
 }
