@@ -1,6 +1,6 @@
 /* 
 Theme: Yotsuba Nakano
-Version: 2026.06.14
+Version: 2026.07.08
 Author: https://github.com/sanicsquirtle420 
 */
 header {
@@ -21,6 +21,7 @@ body {
 	font-size: 15px ;
 	background-color: #3f533c;
 }
+
 footer {
 	width: 100% ;
 	padding: 2px ;
@@ -113,6 +114,11 @@ table img {
 	width: 50px ;
 }
 
+tr.t-bold  td {
+	font-weight: bold ;
+	color: #e2fffb ;
+}
+
 img.img-diego {
 	border-radius: 50% ;
 	height: 15% ;
@@ -142,6 +148,39 @@ img.img-diego {
 		border-radius: 100% ;
 		height: 25%;
 		width: 25%;
+	}
+}
+
+/* Animation CSS */
+@view-transition {
+	navigation: auto ;
+}
+
+main {
+	view-transition-name: main-body ;
+}
+
+::view-transition-group(main-body) {
+	animation-duration: 500ms ;
+	animation-timing-function: ease ;
+}
+
+::view-transition-old(main-body) {
+	animation-name: slide-out ;
+}
+::view-transition-new(main-body) {
+	animation-name: slide-in ;
+}
+
+@keyframes slide-out {
+	to {
+		translate: -100vw ;
+	}
+}
+
+@keyframes slide-in {
+	from {
+		translate: 100vw ;
 	}
 }
 
@@ -194,35 +233,12 @@ div {
 	text-align: center ;
 }
 
-.prog {
-	display: flex ;
-	align-items: center ;
-	justify-content: center ;
-}
-
-.prog img {
-	height: 45px ;
-	width: 45px ;
-	padding: 10px ;
-}
-
 .social {
 	display: flex ;
 	justify-content: center ;
 	align-items: center ;
 	gap: 10px ;
 }
-
-.specs {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 1fr;
-	grid-column-gap: 2px;
-	grid-row-gap: 2px;
-}
-
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 1 / 2 / 2 / 3; }
 
 .wrap {
 	display: flex ;
@@ -236,6 +252,30 @@ div {
 
 .wrap-right {
 	flex-direction: row-reverse ;
+}
+
+.navigation {
+	font-family: "Open Sans" ;
+	display: flex ;
+	justify-content: flex-start ;
+	color: #ffffff ;
+	background-color: #29342a ;
+	overflow: auto ;
+	white-space: nowrap ;
+}
+
+.navigation a {
+	display: flex ;
+	justify-content: flex-start ;
+	text-align: center ;
+	padding: 15px ;
+	text-decoration: none ;
+	color: #ffffff ;
+}
+
+.navigation a:hover {
+	background-color: #dbb988 ;
+	color: #000000 ;
 }
 
 /* Code Block CSS */
